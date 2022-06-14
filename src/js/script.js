@@ -11,4 +11,11 @@ document.addEventListener('click', e => {
         target.closest('.mobile-item').classList.remove('mobile-item-active')
     }
 
+    if(target.closest('.burger')){
+        target.closest('.burger').classList.toggle('burger-active')
+        target.closest('nav').querySelector('.menu').classList.toggle('menu-active')
+    }
+
+    
+
 })

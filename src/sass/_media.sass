@@ -1,0 +1,241 @@
+@media (max-width: 1200px)
+    .menu
+        &-item:not(:first-child)
+            padding-left: 20px
+        &-link
+            font-size: 13px
+    .subheader
+        .call-text
+            span
+                font-size: 18px
+    .promo
+        &-btn
+            margin-top: 40px
+    .reason
+        &-block-desc
+            max-width: 300px
+            min-height: 200px
+    .footer
+        &-store
+            flex-direction: column
+            align-items: end
+            justify-content: center
+
+@media (max-width: 991px)
+    .menu
+        &-item:not(:first-child)
+            padding-left: 10px
+        &-link
+            font-size: 10px
+    .subheader
+        &-logo-text
+            font-size: 12px
+    .promo
+        .title
+            font-size: 55px
+        &-btn
+            margin-top: 25px
+    .choice
+        &-auto-wrapper img
+            width: 650px
+    .reason
+        &-block-desc
+            max-width: 500px
+            min-height: 130px
+    .world
+        background: url('../img/bg/world_bg.jpg') center center/cover no-repeat
+        &-bg
+            background: none
+    .footer
+        &-social
+            margin-right: 75px
+        &-links
+            .main-links
+                a
+                    font-size: 12px
+            .more-links
+                a
+                    font-size: 9px
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        top: 0
+        left: -100%
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 50%
+        height: 100vh
+        background-color: rgba(0,0,0, 0.8)
+        padding: 20px 15px
+        transition: 0.6s all
+        &-active
+            left: 0
+        &-item:not(:first-child)
+            border: none
+            padding: 0
+        &-item
+            margin-bottom: 10px
+        &-link
+            font-size: 15px
+    .burger
+        display: block
+        position: absolute
+        right: 13px
+        top: 50%
+        transform: translateY(-50%)
+        cursor: pointer
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: $white
+            margin-bottom: 2px
+            transition: 0.4s all
+        &-active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .subheader
+        &-logo-text
+            display: none
+        .block-hidden
+            display: none
+        .phone-hidden
+            display: block
+        &-logo
+            margin-top: 25px
+        .call-wrapper
+            display: flex
+            justify-content: end
+        .call-block
+            text-align: center
+        .call-btn
+            margin: 0 auto
+    .promo
+        .title
+            font-size: 45px
+            span
+                font-size: 30px
+        &-btn
+            margin-bottom: 25px
+    .reason
+        &-block
+            flex-direction: column
+            align-items: center
+            &-img
+                margin-bottom: 23px
+    .choice
+        &-auto-wrapper img
+            width: 500px
+            transform: translate(50%, -20%)
+    .footer
+        &-info
+            flex-direction: column
+            align-items: center
+        &-social
+            order: 2
+            margin-right: 0
+            margin-top: 19px
+        &-store
+            order: 3
+            margin-top: 19px
+            flex-direction: row
+            justify-content: space-between
+
+@media (max-width: 575px)
+    .subheader
+        padding: 10px 0
+        min-height: 80px
+        &-logo
+            margin-top: 20px
+        .call-block
+            .call-text-phone
+                font-style: normal
+                font-weight: 400
+                font-size: 12px
+                margin-bottom: 10px
+            .call-btn
+                width: 110px
+                height: 22px
+                font-size: 10px
+    .promo
+        min-height: 400px
+        &-btn
+            margin-top: 74px
+            margin-bottom: 34px
+        .title
+            font-size: 30px
+            span
+                font-size: 20px
+                margin-top: 34px
+        &-descr
+            display: none
+    .reason
+        .title
+            font-size: 16px
+    .mobile
+        .title
+            font-size: 16px
+        &-item
+            width: 290px
+            height: 254px
+            &-title
+                font-size: 18px
+    .choice
+        min-height: 450px
+        background: #070716
+        &-title, &-subtitle
+            display: none
+        &-block_bottom
+            background: none
+            height: auto
+        &-block_top
+            height: auto
+        &-auto-wrapper img
+            width: 280px
+            height: 190px
+            transform: translate(50%, 80%)
+        &-auto-desc
+            padding: 0px 10px
+            font-size: 17px
+            color: $white
+            margin-top: 23px
+            margin-bottom: 31px
+    .conditions
+        &-title
+            font-size: 16px
+        &-block
+            &-header
+                font-size: 16px
+            ul
+                li
+                    font-size: 14px
+        .require-block
+            margin-top: 30px
+            &-header
+                font-size: 16px
+            ul li
+                font-size: 14px
+    .world
+        min-height: 360px
+        &-title
+            font-size: 16px
+        &-text
+            font-size: 14px
+        &-link-wrap
+            margin-top: 211px
+    .footer
+        .divider
+            width: 255px
+            margin-bottom: 20px
+        &-links
+            width: 100%
